@@ -29,3 +29,8 @@ EXPOSE 80
 EXPOSE 443
 ENTRYPOINT ["dotnet", "<your-project>.dll"]
 ````
+
+## Support
+Please submit any bugs or feature requests as issues here on github, we're happy to help! Digivance develops and maintains open source projects and cloud service offerings for developers, please see our website to learn more about what we offer and or to contact our team.
+
+www.Digivance.com
