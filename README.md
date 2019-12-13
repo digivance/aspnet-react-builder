@@ -9,7 +9,7 @@ npm --version
 nodejs --version
 exit
 ````
-___exampe:___
+___example:___
 ````
 ash
 root@f15f51080c3e:/src# npm --version
