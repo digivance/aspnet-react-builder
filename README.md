@@ -1,5 +1,24 @@
 # ASP.Net Core & React
-aspnet-react-builder is an open source docker image that developers can use to easily compile ASP.Net core web applications using React as their front end. Specifically, with this image you can run dotnet build on a project build from the standard Visual Studio ASP.Net web application with react template.
+aspnet-react-builder is an open source docker container that developers can use to easily compile ASP.Net core web applications using React as their front end. Specifically, with this container you can run dotnet build on a project build from the standard Visual Studio ASP.Net web application with react template.
+
+The tags of the aspnet-react-builder container aligns with the version of ASP.Net Core SDK available. The Npm and NodeJS versions are kept up to date using automated build processes. You can launch this container with interactive bash shell prompt and check which versions are installed by running the following commands:
+
+````
+docker run -it digivance/aspnet-react-builder /bin/bash
+npm --version
+nodejs --version
+exit
+````
+___exampe:___
+````
+ash
+root@f15f51080c3e:/src# npm --version
+6.11.3
+root@f15f51080c3e:/src# nodejs --version
+v10.17.0
+root@f15f51080c3e:/src# exit
+exit
+````
 
 ## Simple Use Case
 A simple use case, you have created a small demo project and want to build your application as a docker image containing all of the .NET Core, Npm and NodeJS frameworks and tools. You might do this for your beta testing machine so that you can shell into it and use the development tools to test out fixes to bugs. To do this, create a Dockerfile in the project root (where the .csproj file is) containing the following:
